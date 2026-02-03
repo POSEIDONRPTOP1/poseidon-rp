@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poseidon Roleplay • Termos e Regras</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background-color: #0b1620;
+      color: #e6f4fa;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 280px;
+      background-color: #08111a;
+      border-right: 1px solid rgba(0,180,255,0.15);
+      padding: 20px 15px;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      color: #00b4ff;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #cfefff;
+      font-size: 0.95rem;
+    }
+    .sidebar li:hover {
+      background-color: rgba(0,180,255,0.1);
+    }
+    .sidebar li.active {
+      background-color: rgba(0,180,255,0.2);
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    /* MAIN */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .banner {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: linear-gradient(180deg, #062c3f, #041d2b);
+      animation: glowBg 6s ease-in-out infinite;
+
+      background: linear-gradient(180deg, #062c3f, #041d2b);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(0,180,255,0.25);
+    }
+    .banner img {
+      max-width: 600px;
+      width: 100%;
+      filter: drop-shadow(0 0 25px rgba(0,180,255,0.6));
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 25px;
+    }
+
+    .content h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      color: #cfefff;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    section {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,180,255,0.2);
+    }
+
+    section h2 {
+      color: #00b4ff;
+      margin-bottom: 15px;
+    }
+
+    ul.rules {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.rules li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #7fbfdc;
+      border-top: 1px solid rgba(0,180,255,0.15);
+      margin-top: 60px;
+    }
+
+    @keyframes glowBg {
+      0% { box-shadow: 0 0 20px rgba(0,180,255,0.2); }
+      50% { box-shadow: 0 0 60px rgba(0,180,255,0.45); }
+      100% { box-shadow: 0 0 20px rgba(0,180,255,0.2); }
+    }
+
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      body { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div style="text-align:center;margin-bottom:20px;">
+      <img src="poseidon-logo.png" alt="Poseidon Logo" style="width:160px;filter:drop-shadow(0 0 20px rgba(0,180,255,0.6));">
+    </div>
+    <h2>📘 Poseidon Roleplay</h2>
+    <ul id="menu">
+      <li class="active" data-target="termos">Termos e Regras</li>
+      <li data-target="gerais">Regras Gerais</li>
+      <li data-target="personagem">Regras de Personagem</li>
+      <li data-target="penal">Código Penal</li>
+      <li data-target="safe">Áreas Safe</li>
+      <li data-target="policia">Regras Polícia</li>
+      <li data-target="ilegal">Regras Ilegal</li>
+      <li data-target="acoes">Regras de Ações</li>
+      <li data-target="hospital">Hospital / Bombeiro</li>
+      <li data-target="denuncias">Denúncias</li>
+      <li data-target="punicoes">Punições</li>
+      <li data-target="aceite">Aceite das Regras</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <div class="banner">
+      <img src="poseidon-logo.png" alt="Poseidon Roleplay Logo" style="max-width:300px; width:100%; height:auto; margin-bottom:15px;">
+      <h1 style="color:#00b4ff; margin:0;">Poseidon Roleplay</h1>
+      <p style="color:#cfefff; margin-top:10px;">Servidor FiveM • Roleplay Realista</p>
+    </div>
+
+    <div class="content">
+
+      <section id="termos" class="page">
+        <h1>📜 Poseidon Roleplay — Termos e Regras</h1>
+        <p>Sejam muito bem-vindos às regras oficiais da Poseidon Roleplay.</p>
+        <p>Leiam todas as regras com atenção. O desconhecimento das regras não isenta punições.</p>
+      </section>
+
+      <section id="gerais" class="page" style="display:none">
+        <h2>Regras Gerais</h2>
+        <ul class="rules">
+          <li><strong>Metagaming (MG):</strong> É totalmente proibido utilizar informações obtidas fora do jogo (Discord, lives, chats externos ou conhecimento prévio) dentro do RP. Todo conhecimento deve ser adquirido exclusivamente em roleplay.</li>
+          <li><strong>Powergaming (PG):</strong> Proibido forçar ações irreais, abusar de mecânicas do jogo ou impedir a reação de outro jogador. Toda ação deve permitir interpretação e resposta RP.</li>
+          <li><strong>Fail RP:</strong> Quebrar a imersão, agir sem lógica ou de forma incompatível com a situação vivida pelo personagem será considerado Fail RP.</li>
+          <li><strong>RDM:</strong> Matar outro jogador sem motivo RP válido, sem contexto ou sem interação prévia é estritamente proibido.</li>
+          <li><strong>VDM:</strong> Utilizar veículos como arma, atropelando jogadores sem justificativa RP clara, é proibido.</li>
+          <li><strong>Amor à Vida:</strong> Seu personagem deve sempre prezar pela própria vida, evitando atitudes suicidas ou irreais.</li>
+          <li><strong>Combat Logging:</strong> Desconectar do servidor para fugir de uma situação RP (abordagem, prisão, ação ou morte) resultará em punição.</li>
+          <li><strong>Uso de Bugs:</strong> Explorar falhas do servidor para obter vantagem é proibido e deve ser reportado à staff.</li>
+        </ul>
+      </section>
+
+      <section id="personagem" class="page" style="display:none">
+        <h2>Regras de Personagem</h2>
+        <p>Todo jogador deve criar e interpretar um personagem com história, personalidade e coerência. Mudanças bruscas de comportamento sem motivo RP não são permitidas.</p>
+        <p>O personagem deve manter o mesmo nome, características e estilo de atuação, respeitando o ambiente RP da city.</p>
+        <p>É obrigatório valorizar a vida do personagem, respeitar consequências de ações e aceitar punições RP quando aplicáveis.</p>
+      </section>
+
+      <section id="penal" class="page" style="display:none">
+        <h2>Código Penal</h2>
+        <p>O Código Penal define crimes, contravenções, penas e procedimentos legais dentro da city.</p>
+        <p>Todos os cidadãos estão sujeitos às leis vigentes, incluindo multas, prisões, apreensões e processos judiciais RP.</p>
+        <p>Policiais e advogados devem seguir rigorosamente os procedimentos legais estabelecidos.</p>
+      </section>
+
+      <section id="safe" class="page" style="display:none">
+        <h2>Áreas Safe</h2>
+        <p>Áreas Safe são locais onde qualquer tipo de ação hostil é estritamente proibida, independentemente de situação anterior.</p>
+        <ul class="rules">
+          <li>É proibido atirar, agredir, sequestrar ou ameaçar jogadores.</li>
+          <li>É proibido iniciar perseguições ou abordagens armadas.</li>
+          <li>É proibido utilizar provocações para forçar ações.</li>
+          <li>Desrespeitar área safe resulta em punição severa.</li>
+        </ul>
+      </section>
+
+      <section id="policia" class="page" style="display:none">
+        <h2>Regras Polícia</h2>
+        <p>A polícia deve atuar com profissionalismo, imparcialidade e dentro da legalidade.</p>
+        <ul class="rules">
+          <li>É obrigatório priorizar abordagem verbal antes do uso da força.</li>
+          <li>Uso progressivo da força deve ser respeitado.</li>
+          <li>Abuso de poder será punido.</li>
+          <li>Policiais devem seguir o Código Penal e procedimentos RP.</li>
+        </ul>
+      </section>
+
+      <section id="ilegal" class="page" style="display:none">
+        <h2>Regras Ilegal</h2>
+        <p>Atividades ilegais devem sempre seguir o contexto RP e limites estabelecidos pela city.</p>
+        <ul class="rules">
+          <li>Proibido RDM/VDM em ações ilegais.</li>
+          <li>Assaltos exigem abordagem RP clara.</li>
+          <li>É proibido forçar ações sem chance de reação.</li>
+          <li>Respeitar limites de participantes definidos.</li>
+        </ul>
+      </section>
+
+      <section id="acoes" class="page" style="display:none">
+        <h2>Regras de Ações</h2>
+        <p>Toda ação deve ter início, desenvolvimento e final RP.</p>
+        <ul class="rules">
+          <li>Motivação RP é obrigatória.</li>
+          <li>Proibido iniciar ação sem anúncio quando exigido.</li>
+          <li>É proibido descumprir limites de participantes.</li>
+          <li>Encerrar ações de forma antirrealista é Fail RP.</li>
+        </ul>
+      </section>
+
+      <section id="hospital" class="page" style="display:none">
+        <h2>Hospital / Bombeiro</h2>
+        <p>Profissionais da saúde e bombeiros devem atuar com seriedade e ética RP.</p>
+        <ul class="rules">
+          <li>Proibido reviver jogadores sem RP adequado.</li>
+          <li>É obrigatório respeitar tempo de atendimento.</li>
+          <li>Atendimento deve seguir protocolos RP.</li>
+        </ul>
+      </section>
+
+      <section id="denuncias" class="page" style="display:none">
+        <h2>Denúncias</h2>
+        <p>Denúncias devem ser feitas pelos canais oficiais da city.</p>
+        <ul class="rules">
+          <li>É obrigatório apresentar provas válidas.</li>
+          <li>Denúncias falsas resultam em punição.</li>
+          <li>Respeite o tempo de análise da staff.</li>
+        </ul>
+      </section>
+
+      <section id="punicoes" class="page" style="display:none">
+        <h2>Punições</h2>
+        <p>As punições são aplicadas conforme a gravidade da infração.</p>
+        <ul class="rules">
+          <li>Advertência verbal</li>
+          <li>Advertência escrita</li>
+          <li>Jail RP</li>
+          <li>Banimento temporário</li>
+          <li>Banimento permanente</li>
+        </ul>
+        <p>A reincidência pode agravar a punição aplicada.</p>
+      </section>
+
+      <section id="aceite" class="page" style="display:none">
+        <h2>✅ Aceite das Regras</h2>
+        <p>Para continuar jogando na <strong>Poseidon Roleplay</strong>, é obrigatório aceitar todas as regras acima.</p>
+
+        <div style="margin-top:30px;padding:30px;border-radius:16px;background:rgba(0,180,255,0.1);box-shadow:0 0 30px rgba(0,180,255,0.35)">
+          <label style="font-size:1.2rem;display:flex;gap:14px;align-items:center;cursor:pointer">
+            <input type="checkbox" id="acceptRules" style="transform:scale(1.6)">
+            Eu li e aceito todas as regras da Poseidon Roleplay
+          </label>
+
+          <div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:20px">
+            <button id="enterCity" disabled style="padding:16px 34px;font-size:1.15rem;border:none;border-radius:14px;background:#00b4ff;color:#041d2b;font-weight:bold;cursor:not-allowed;opacity:0.5">
+              🔱 Entrar na City
+            </button>
+
+            <a href="https://discord.gg/poseidonrp" target="_blank" style="padding:16px 34px;font-size:1.1rem;border-radius:14px;background:#5865F2;color:#fff;text-decoration:none;font-weight:bold;box-shadow:0 0 25px rgba(88,101,242,0.6)">
+              💬 Entrar no Discord
+            </a>
+          </div>
+
+          <p id="acceptMsg" style="margin-top:20px;color:#7fbfdc"></p>
+        </div>
+      </section>
+
+      <footer>
+        © 2026 • Poseidon Roleplay • Todos os direitos reservados
+      </footer>
+    </div>
+
+  </main>
+
+<script>
+  const menuItems = document.querySelectorAll('#menu li');
+  const pages = document.querySelectorAll('.page');
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+
+      pages.forEach(p => p.style.display = 'none');
+      document.getElementById(item.dataset.target).style.display = 'block';
+    });
+  });
+  const acceptCheckbox = document.getElementById('acceptRules');
+  const enterCity = document.getElementById('enterCity');
+  const acceptMsg = document.getElementById('acceptMsg');
+
+  if (acceptCheckbox) {
+    acceptCheckbox.addEventListener('change', () => {
+      if (acceptCheckbox.checked) {
+        enterCity.disabled = false;
+        enterCity.style.cursor = 'pointer';
+        enterCity.style.opacity = '1';
+      } else {
+        enterCity.disabled = true;
+        enterCity.style.cursor = 'not-allowed';
+        enterCity.style.opacity = '0.5';
+      }
+    });
+  }
+
+  if (enterCity) {
+    enterCity.addEventListener('click', () => {
+      acceptMsg.textContent = '✔️ Regras aceitas! Bem-vindo à Poseidon Roleplay.';
+      acceptMsg.style.color = '#00ffcc';
+      window.open('fivem://connect/104.234.63.97','_self');
+    });
+  }
+</script>
+</body>
+</html>
